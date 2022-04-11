@@ -1,5 +1,8 @@
-# Getting Started with Create React App
+# Ema-John Shopping
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live Site Link [Ema-John Shopping](https://ema-john-shopping-with-react-router-salsadsid.netlify.app).
 
-## Available Scripts
+## About This site
+* This is a React Router Project
+* This is a e-commerce site
+* Local Storage working in this site
