@@ -1,11 +1,13 @@
 .form-container {
     width: 600px;
     margin: 0 auto;
+    margin-top: 30px;
     border: 1px solid #95A0A7;
     box-sizing: border-box;
     border-radius: 8px;
     display: flex;
     justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .form-title {
@@ -41,6 +43,11 @@
     border-radius: 5px;
     border: none;
     font-size: 20px;
+    cursor: pointer;
+}
+
+.form-submit:hover {
+    background-color: rgba(255, 153, 0, 0.58);
 }
 
 .form-link {
