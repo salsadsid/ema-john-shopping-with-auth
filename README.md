@@ -1,6 +1,8 @@
 # Ema-John Shopping
 
-Live Site Link [Ema-John Shopping](https://ema-john-shopping-with-auth-salsadsid.netlify.app/).
+Live Site Link (Netlify) : [Ema-John Shopping](https://ema-john-shopping-with-auth-salsadsid.netlify.app/).
+
+Live Site Link (Firebase) : [Ema-John Shopping](https://ema-john-shopping-with-auth.web.app/).
 
 ## About This site
 * This is a React Router Project
