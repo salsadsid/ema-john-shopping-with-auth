@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSignInWithEmailAndPassword, useSignInWithFacebook } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import './Login.css'
@@ -13,11 +13,13 @@ const Login = () => {
         loading,
         error
     ] = useSignInWithEmailAndPassword(auth);
+
     const location = useLocation()
     const from = location?.state?.from?.pathname || '/'
     if (user) {
         navigate(from, { replace: true })
     }
+    console.log(user)
     const handleEmailBlur = event => {
         setEmail(event.target.value)
     }
@@ -28,6 +30,15 @@ const Login = () => {
     const handleUserSignIn = event => {
         event.preventDefault();
         signInWithEmailAndPassword(email, password);
+    }
+    const [signInWithFacebook, user1] = useSignInWithFacebook(auth);
+    if (user1) {
+        navigate(from, { replace: true })
+    }
+    const signIn = () => {
+
+        signInWithFacebook();
+
     }
     return (
         <div className='form-container'>
@@ -49,6 +60,7 @@ const Login = () => {
                     <input className='form-submit' type="submit" value="Login" />
                 </form>
                 <p>New to Ema-John ? <Link className='form-link' to='/signup'>Create an account</Link></p>
+                <p>Login With <button className='btn' onClick={signIn}>Facebook</button></p>
             </div>
         </div>
     );

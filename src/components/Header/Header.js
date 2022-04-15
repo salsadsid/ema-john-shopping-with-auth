@@ -10,6 +10,7 @@ const Header = () => {
     const handleSignOut = () => {
         signOut(auth)
     }
+    console.log(user?.displayName)
     return (
         <nav className='header'>
             <img src={logo} alt="" />
@@ -20,7 +21,10 @@ const Header = () => {
                 <Link to="/about">About</Link>
                 {
                     user ?
-                        <button onClick={handleSignOut}>Sign Out</button>
+                        <span>
+                            <span style={{ color: "#ffffff" }}>Hello, {user?.displayName || user?.email}</span>
+                            <button onClick={handleSignOut} className='btn'>Sign Out</button>
+                        </span>
                         :
                         <Link to="/login">Login</Link>
                 }
