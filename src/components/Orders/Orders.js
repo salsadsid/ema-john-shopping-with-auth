@@ -11,9 +11,9 @@ const Orders = () => {
     const [cart, setCart] = useCart(products)
     let navigate = useNavigate()
     const handleRemoveCart = (product) => {
-        const rest = cart.filter(pd => pd.id !== product.id)
+        const rest = cart.filter(pd => pd._id !== product._id)
         setCart(rest);
-        removeFromDb(product.id)
+        removeFromDb(product._id)
     }
     return (
         <div className='shop-container'>

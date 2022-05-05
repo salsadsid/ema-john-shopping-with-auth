@@ -1,16 +1,26 @@
-.shop-container{
+.shop-container {
     display: grid;
     grid-template-columns: 4fr 1fr;
 }
-.products-container{
+
+.products-container {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 50px;
     margin-left: 100px;
     margin-right: 100px;
     margin-top: 100px;
 }
-.cart-container{
+
+.cart-container {
     background-color: #ff990046;
     padding: 10px 40px;
+}
+
+.pagination button {
+    margin-left: 5px;
+}
+
+.selected {
+    filter: brightness(.8);
 }

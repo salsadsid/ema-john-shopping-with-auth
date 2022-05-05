@@ -56,7 +56,7 @@ const SignUp = () => {
                     <p>{error.message}</p>
                     <input className='form-submit' type="submit" value="Sign Up" />
                 </form>
-                <p>Already an Account ? <Link className='form-link' to='/login'>Login</Link></p>
+                <p>Already an Account ? <Link className='form-link' to='/login'><button className='btn'>Log In</button></Link></p>
             </div>
         </div>
     );

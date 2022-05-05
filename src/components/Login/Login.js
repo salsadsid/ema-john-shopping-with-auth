@@ -59,7 +59,7 @@ const Login = () => {
                     }
                     <input className='form-submit' type="submit" value="Login" />
                 </form>
-                <p>New to Ema-John ? <Link className='form-link' to='/signup'>Create an account</Link></p>
+                <p>New to Ema-John ? <Link className='form-link' to='/signup'><button className='btn'>Create an account</button></Link></p>
                 <p>Login With <button className='btn' onClick={signIn}>Facebook</button></p>
             </div>
         </div>

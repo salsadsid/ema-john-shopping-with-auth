@@ -72,7 +72,7 @@
 }
 
 .btn:hover:not(:disabled) {
-    filter: brightness(1.1);
+    filter: brightness(1.2);
 }
 
 .btn:disabled {
